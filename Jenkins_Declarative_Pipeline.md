@@ -60,4 +60,6 @@ Few pointes to note:
 2. Hide the credential with the envrionment property in jenkins.
 3. Tried the jenkins wth **Pipeline with Script** and **Pipeline script from SCM** both the options.
 
-![Alt text](image link)
+
+![ Pipeline with Script](https://github.com/AkshaySJadhav/DevOps/blob/main/resource/Pipeline_From_Script.png)
+![ Pipeline with Script](https://github.com/AkshaySJadhav/DevOps/blob/main/resource/Pipeline_From_Script.png)
