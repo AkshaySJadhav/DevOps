@@ -62,4 +62,4 @@ Few pointes to note:
 
 
 ![ Pipeline with Script](https://github.com/AkshaySJadhav/DevOps/blob/main/resource/Pipeline_From_Script.png)
-![ Pipeline with Script](https://github.com/AkshaySJadhav/DevOps/blob/main/resource/Pipeline_From_Script.png)
+![ Pipeline with Script](https://github.com/AkshaySJadhav/DevOps/blob/main/resource/Pipeline_Script_From_SCM.png)
