@@ -9,8 +9,8 @@ These are 4 stages are are going to use while buildig the pipeline.
 ### [1]. Installation of Jenkins.
 ```
 #yum install java-11-openjdk -y
-#curl --silent --location http://pkg.jenkins-ci.org/redhat-stable/jenkins.repo | sudo tee /etc/yum.repos.d/jenkins.repo
-#sudo rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+#sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+#sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 #sudo yum install jenkins
 #systemctl start jenkins
 #systemctl enable jenkins
