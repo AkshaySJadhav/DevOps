@@ -1,6 +1,6 @@
 # Developing Jenkins Declarative pipeline.
 
-These are 4 stages are are going to use while buildig the pipeline.
+We are going to use these 4 stages while building the pipeline.
 
 | Clone the Git Code  | Build docker image | Deploy image to DockerHub | Launch the container
 | ------------- | -------------- | ------------- | -------------- |
