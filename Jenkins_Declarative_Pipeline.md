@@ -31,22 +31,25 @@ pipeline {
         stage("Build"){
             steps {
                 echo "Building the image"
-                sh "docker build -t mynote-app ."
+                sh "docker build -t my-note-app ."
             }
             
         }
         stage("Push to Docker"){
             steps {
-                 echo "Pushing the image to docker."
-                withCredentials([usernamePassword(credentialsId:"dockerhubcred", passwordVariable: "dockerHubPass", usernameVariable: "dockerHubUser")]) { 
+                echo "Pushing the image to docker."
+                withCredentials([usernamePassword(credentialsId:"dockerHub", passwordVariable: "dockerHubPass", usernameVariable: "dockerHubUser")]) { 
+                sh "docker tag my-note-app akshaysjadhav/my-note-app:latest"
                 sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPass}"
+                sh "docker push akshaysjadhav/my-note-app:latest"
                 }
             }
             
         }
         stage("Deploy"){
             steps {
-                 echo "Deploying the container "    
+                 echo "Deploying the container"
+                 sh "docker run -d -p 8000:8000 akshaysjadhav/my-note-app:latest"
             }
             
         }
